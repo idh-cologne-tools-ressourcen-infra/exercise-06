@@ -1,0 +1,439 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-Ptext_-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"-weka.filters.unsupervised.attribute.NumericToNominal-R1
+Instances:    5000
+Attributes:   1010
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:194/194 (5000)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.28 + 
+[text_/>There] * 0.24 +
+[text_/>This] * -0.19 +
+[text_1] * 0.48 +
+[text_<br] * 0.11 +
+[text_British] * -0.31 +
+[text_DVD] * -0.22 +
+[text_David] * -0.25 +
+[text_Don] * 0.31 +
+[text_He] * -0.12 +
+[text_Maybe] * 0.47 +
+[text_OK] * 0.24 +
+[text_Oh] * 0.39 +
+[text_THE] * 0.25 +
+[text_That] * 0.16 +
+[text_The] * 0.09 +
+[text_Well] * 0.2  +
+[text_Who] * -0.27 +
+[text_Why] * 0.4  +
+[text_York] * -0.37 +
+[text_action] * -0.18 +
+[text_actor] * 0.18 +
+[text_also] * -0.14 +
+[text_always] * -0.15 +
+[text_amazing] * -0.48 +
+[text_annoying] * 0.39 +
+[text_any] * 0.24 +
+[text_apparently] * 0.37 +
+[text_atmosphere] * -0.3 +
+[text_attempt] * 0.34 +
+[text_awful] * 0.71 +
+[text_back] * -0.16 +
+[text_bad] * 0.57 +
+[text_basically] * 0.36 +
+[text_battle] * -0.4 +
+[text_beautiful] * -0.25 +
+[text_been] * 0.1  +
+[text_best] * -0.31 +
+[text_bit] * -0.14 +
+[text_boring] * 0.58 +
+[text_brilliant] * -0.35 +
+[text_brings] * -0.3 +
+[text_brother] * -0.25 +
+[text_budget] * 0.29 +
+[text_caught] * -0.35 +
+[text_chance] * -0.34 +
+[text_classic] * -0.3 +
+[text_comedy] * -0.15 +
+[text_complete] * 0.35 +
+[text_could] * 0.19 +
+[text_couldn] * 0.25 +
+[text_crap] * 0.48 +
+[text_cut] * 0.38 +
+[text_decent] * 0.25 +
+[text_definitely] * -0.25 +
+[text_different] * -0.29 +
+[text_director] * 0.19 +
+[text_disappointed] * 0.38 +
+[text_documentary] * -0.25 +
+[text_dull] * 0.47 +
+[text_easy] * -0.32 +
+[text_effort] * 0.38 +
+[text_enjoyable] * -0.37 +
+[text_enjoyed] * -0.42 +
+[text_entertaining] * -0.23 +
+[text_even] * 0.1  +
+[text_everything] * -0.18 +
+[text_example] * 0.21 +
+[text_excellent] * -0.56 +
+[text_expecting] * -0.38 +
+[text_fall] * -0.31 +
+[text_fantastic] * -0.4 +
+[text_favorite] * -0.51 +
+[text_feature] * 0.26 +
+[text_feel] * -0.17 +
+[text_female] * 0.23 +
+[text_first] * -0.14 +
+[text_follows] * -0.29 +
+[text_forced] * 0.31 +
+[text_fun] * -0.29 +
+[text_game] * -0.26 +
+[text_girl] * -0.21 +
+[text_goes] * 0.15 +
+[text_great] * -0.47 +
+[text_greatest] * -0.39 +
+[text_head] * 0.26 +
+[text_highly] * -0.31 +
+[text_hilarious] * -0.34 +
+[text_horrible] * 0.54 +
+[text_huge] * 0.31 +
+[text_human] * -0.28 +
+[text_idea] * 0.23 +
+[text_job] * -0.22 +
+[text_just] * 0.1  +
+[text_knew] * -0.28 +
+[text_lack] * 0.26 +
+[text_lame] * 0.32 +
+[text_late] * -0.25 +
+[text_later] * -0.18 +
+[text_least] * 0.15 +
+[text_leave] * 0.25 +
+[text_less] * 0.21 +
+[text_life] * -0.23 +
+[text_like] * 0.17 +
+[text_liked] * -0.24 +
+[text_lives] * -0.36 +
+[text_looks] * 0.2  +
+[text_lot] * -0.22 +
+[text_love] * -0.3 +
+[text_loved] * -0.2 +
+[text_main] * 0.2  +
+[text_masterpiece] * -0.26 +
+[text_material] * 0.24 +
+[text_mess] * 0.72 +
+[text_minutes] * 0.39 +
+[text_monster] * 0.42 +
+[text_most] * -0.11 +
+[text_moving] * -0.37 +
+[text_must] * -0.12 +
+[text_my] * -0.09 +
+[text_new] * -0.21 +
+[text_nothing] * 0.33 +
+[text_often] * -0.2 +
+[text_original] * 0.25 +
+[text_our] * -0.35 +
+[text_perfect] * -0.39 +
+[text_performance] * -0.19 +
+[text_performances] * -0.31 +
+[text_played] * -0.19 +
+[text_plot] * 0.31 +
+[text_poor] * 0.56 +
+[text_poorly] * 0.73 +
+[text_power] * -0.29 +
+[text_predictable] * 0.42 +
+[text_premise] * 0.26 +
+[text_problem] * 0.39 +
+[text_quality] * 0.2  +
+[text_realistic] * -0.28 +
+[text_reason] * 0.28 +
+[text_remember] * -0.2 +
+[text_ridiculous] * 0.43 +
+[text_save] * 0.31 +
+[text_score] * -0.24 +
+[text_script] * 0.18 +
+[text_seems] * 0.19 +
+[text_seen] * -0.19 +
+[text_simple] * -0.52 +
+[text_sister] * -0.26 +
+[text_somewhat] * -0.25 +
+[text_still] * -0.21 +
+[text_stop] * 0.25 +
+[text_stupid] * 0.57 +
+[text_superb] * -0.6 +
+[text_supposed] * 0.44 +
+[text_surprise] * -0.29 +
+[text_surprised] * -0.38 +
+[text_t] * 0.15 +
+[text_takes] * -0.26 +
+[text_tells] * -0.37 +
+[text_terrible] * 0.54 +
+[text_them] * 0.11 +
+[text_theme] * -0.31 +
+[text_thing] * 0.14 +
+[text_throughout] * -0.25 +
+[text_to] * 0.17 +
+[text_today] * -0.46 +
+[text_top] * -0.29 +
+[text_tried] * 0.26 +
+[text_tries] * 0.27 +
+[text_turns] * -0.19 +
+[text_very] * -0.22 +
+[text_villain] * 0.31 +
+[text_want] * 0.18 +
+[text_wasn] * 0.21 +
+[text_waste] * 0.83 +
+[text_wasted] * 0.58 +
+[text_watch] * -0.13 +
+[text_watching] * 0.13 +
+[text_ways] * -0.35 +
+[text_weak] * 0.41 +
+[text_well] * -0.18 +
+[text_were] * 0.09 +
+[text_which] * 0.11 +
+[text_will] * -0.15 +
+[text_with] * -0.1 +
+[text_wonder] * 0.27 +
+[text_wonderful] * -0.62 +
+[text_works] * -0.3 +
+[text_worse] * 0.41 +
+[text_worst] * 0.83 +
+[text_worth] * -0.15 +
+[text_would] * 0.14 +
+[text_wrong] * 0.23 +
+[text_you] * -0.08
+
+Class 1 :
+0.28 + 
+[text_/>There] * -0.24 +
+[text_/>This] * 0.19 +
+[text_1] * -0.48 +
+[text_<br] * -0.11 +
+[text_British] * 0.31 +
+[text_DVD] * 0.22 +
+[text_David] * 0.25 +
+[text_Don] * -0.31 +
+[text_He] * 0.12 +
+[text_Maybe] * -0.47 +
+[text_OK] * -0.24 +
+[text_Oh] * -0.39 +
+[text_THE] * -0.25 +
+[text_That] * -0.16 +
+[text_The] * -0.09 +
+[text_Well] * -0.2 +
+[text_Who] * 0.27 +
+[text_Why] * -0.4 +
+[text_York] * 0.37 +
+[text_action] * 0.18 +
+[text_actor] * -0.18 +
+[text_also] * 0.14 +
+[text_always] * 0.15 +
+[text_amazing] * 0.48 +
+[text_annoying] * -0.39 +
+[text_any] * -0.24 +
+[text_apparently] * -0.37 +
+[text_atmosphere] * 0.3  +
+[text_attempt] * -0.34 +
+[text_awful] * -0.71 +
+[text_back] * 0.16 +
+[text_bad] * -0.57 +
+[text_basically] * -0.36 +
+[text_battle] * 0.4  +
+[text_beautiful] * 0.25 +
+[text_been] * -0.1 +
+[text_best] * 0.31 +
+[text_bit] * 0.14 +
+[text_boring] * -0.58 +
+[text_brilliant] * 0.35 +
+[text_brings] * 0.3  +
+[text_brother] * 0.25 +
+[text_budget] * -0.29 +
+[text_caught] * 0.35 +
+[text_chance] * 0.34 +
+[text_classic] * 0.3  +
+[text_comedy] * 0.15 +
+[text_complete] * -0.35 +
+[text_could] * -0.19 +
+[text_couldn] * -0.25 +
+[text_crap] * -0.48 +
+[text_cut] * -0.38 +
+[text_decent] * -0.25 +
+[text_definitely] * 0.25 +
+[text_different] * 0.29 +
+[text_director] * -0.19 +
+[text_disappointed] * -0.38 +
+[text_documentary] * 0.25 +
+[text_dull] * -0.47 +
+[text_easy] * 0.32 +
+[text_effort] * -0.38 +
+[text_enjoyable] * 0.37 +
+[text_enjoyed] * 0.42 +
+[text_entertaining] * 0.23 +
+[text_even] * -0.1 +
+[text_everything] * 0.18 +
+[text_example] * -0.21 +
+[text_excellent] * 0.56 +
+[text_expecting] * 0.38 +
+[text_fall] * 0.31 +
+[text_fantastic] * 0.4  +
+[text_favorite] * 0.51 +
+[text_feature] * -0.26 +
+[text_feel] * 0.17 +
+[text_female] * -0.23 +
+[text_first] * 0.14 +
+[text_follows] * 0.29 +
+[text_forced] * -0.31 +
+[text_fun] * 0.29 +
+[text_game] * 0.26 +
+[text_girl] * 0.21 +
+[text_goes] * -0.15 +
+[text_great] * 0.47 +
+[text_greatest] * 0.39 +
+[text_head] * -0.26 +
+[text_highly] * 0.31 +
+[text_hilarious] * 0.34 +
+[text_horrible] * -0.54 +
+[text_huge] * -0.31 +
+[text_human] * 0.28 +
+[text_idea] * -0.23 +
+[text_job] * 0.22 +
+[text_just] * -0.1 +
+[text_knew] * 0.28 +
+[text_lack] * -0.26 +
+[text_lame] * -0.32 +
+[text_late] * 0.25 +
+[text_later] * 0.18 +
+[text_least] * -0.15 +
+[text_leave] * -0.25 +
+[text_less] * -0.21 +
+[text_life] * 0.23 +
+[text_like] * -0.17 +
+[text_liked] * 0.24 +
+[text_lives] * 0.36 +
+[text_looks] * -0.2 +
+[text_lot] * 0.22 +
+[text_love] * 0.3  +
+[text_loved] * 0.2  +
+[text_main] * -0.2 +
+[text_masterpiece] * 0.26 +
+[text_material] * -0.24 +
+[text_mess] * -0.72 +
+[text_minutes] * -0.39 +
+[text_monster] * -0.42 +
+[text_most] * 0.11 +
+[text_moving] * 0.37 +
+[text_must] * 0.12 +
+[text_my] * 0.09 +
+[text_new] * 0.21 +
+[text_nothing] * -0.33 +
+[text_often] * 0.2  +
+[text_original] * -0.25 +
+[text_our] * 0.35 +
+[text_perfect] * 0.39 +
+[text_performance] * 0.19 +
+[text_performances] * 0.31 +
+[text_played] * 0.19 +
+[text_plot] * -0.31 +
+[text_poor] * -0.56 +
+[text_poorly] * -0.73 +
+[text_power] * 0.29 +
+[text_predictable] * -0.42 +
+[text_premise] * -0.26 +
+[text_problem] * -0.39 +
+[text_quality] * -0.2 +
+[text_realistic] * 0.28 +
+[text_reason] * -0.28 +
+[text_remember] * 0.2  +
+[text_ridiculous] * -0.43 +
+[text_save] * -0.31 +
+[text_score] * 0.24 +
+[text_script] * -0.18 +
+[text_seems] * -0.19 +
+[text_seen] * 0.19 +
+[text_simple] * 0.52 +
+[text_sister] * 0.26 +
+[text_somewhat] * 0.25 +
+[text_still] * 0.21 +
+[text_stop] * -0.25 +
+[text_stupid] * -0.57 +
+[text_superb] * 0.6  +
+[text_supposed] * -0.44 +
+[text_surprise] * 0.29 +
+[text_surprised] * 0.38 +
+[text_t] * -0.15 +
+[text_takes] * 0.26 +
+[text_tells] * 0.37 +
+[text_terrible] * -0.54 +
+[text_them] * -0.11 +
+[text_theme] * 0.31 +
+[text_thing] * -0.14 +
+[text_throughout] * 0.25 +
+[text_to] * -0.17 +
+[text_today] * 0.46 +
+[text_top] * 0.29 +
+[text_tried] * -0.26 +
+[text_tries] * -0.27 +
+[text_turns] * 0.19 +
+[text_very] * 0.22 +
+[text_villain] * -0.31 +
+[text_want] * -0.18 +
+[text_wasn] * -0.21 +
+[text_waste] * -0.83 +
+[text_wasted] * -0.58 +
+[text_watch] * 0.13 +
+[text_watching] * -0.13 +
+[text_ways] * 0.35 +
+[text_weak] * -0.41 +
+[text_well] * 0.18 +
+[text_were] * -0.09 +
+[text_which] * -0.11 +
+[text_will] * 0.15 +
+[text_with] * 0.1  +
+[text_wonder] * -0.27 +
+[text_wonderful] * 0.62 +
+[text_works] * 0.3  +
+[text_worse] * -0.41 +
+[text_worst] * -0.83 +
+[text_worth] * 0.15 +
+[text_would] * -0.14 +
+[text_wrong] * -0.23 +
+[text_you] * 0.08
+
+
+Time taken to build model: 490 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4082               81.64   %
+Incorrectly Classified Instances       918               18.36   %
+Kappa statistic                          0.6328
+Mean absolute error                      0.2389
+Root mean squared error                  0.3626
+Relative absolute error                 47.7738 %
+Root relative squared error             72.5105 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,808    0,176    0,821      0,808    0,815      0,633    0,894     0,892     0
+                 0,824    0,192    0,812      0,824    0,818      0,633    0,894     0,889     1
+Weighted Avg.    0,816    0,184    0,816      0,816    0,816      0,633    0,894     0,890     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2017  478 |    a = 0
+  440 2065 |    b = 1
+
