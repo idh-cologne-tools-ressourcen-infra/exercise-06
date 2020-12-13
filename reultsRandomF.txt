@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-C-T-I-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r \t.,;:\'\"()?!/ <>&#"-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    5000
+Attributes:   1005
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 8.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3707               74.14   %
+Incorrectly Classified Instances      1293               25.86   %
+Kappa statistic                          0.4827
+Mean absolute error                      0.4551
+Root mean squared error                  0.4606
+Relative absolute error                 91.0109 %
+Root relative squared error             92.1178 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.717    0.234    0.753      0.717    0.735      0.483    0.816     0.822     0
+                 0.766    0.283    0.731      0.766    0.748      0.483    0.816     0.802     1
+Weighted Avg.    0.741    0.259    0.742      0.741    0.741      0.483    0.816     0.812     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1789  706 |    a = 0
+  587 1918 |    b = 1
+
