@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-Ptext_-W1000-prune-rate-1.0-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r \t.,;:\'\"()?!<>"-weka.filters.unsupervised.attribute.NumericToNominal-R1
+Instances:    5000
+Attributes:   1002
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(text_bad >= 1) and (text_worst >= 1) => LABEL=0 (201.0/8.0)
+(text_bad >= 1) and (text_great <= 0) => LABEL=0 (759.0/174.0)
+(text_great <= 0) and (text_worst >= 1) => LABEL=0 (202.0/22.0)
+(text_great <= 0) and (text_t >= 1) and (text_nothing >= 1) and (text_movie >= 1) => LABEL=0 (132.0/28.0)
+(text_or >= 1) and (text_great <= 0) and (text_minutes >= 1) and (text_can <= 0) and (text_perfect <= 0) => LABEL=0 (53.0/9.0)
+(text_great <= 0) and (text_no >= 1) and (text_like >= 1) and (text_time <= 0) => LABEL=0 (190.0/70.0)
+(text_or >= 1) and (text_life <= 0) and (text_poor >= 1) and (text_me <= 0) and (text_second <= 0) => LABEL=0 (30.0/3.0)
+(text_great <= 0) and (text_awful >= 1) => LABEL=0 (75.0/10.0)
+(text_bad >= 1) and (text_only >= 1) => LABEL=0 (103.0/35.0)
+(text_great <= 0) and (text_very <= 0) and (text_my <= 0) and (text_their <= 0) and (text_best <= 0) and (text_have >= 1) and (text_just >= 1) => LABEL=0 (81.0/24.0)
+(text_best <= 0) and (text_t >= 1) and (text_boring >= 1) => LABEL=0 (70.0/15.0)
+(text_great <= 0) and (text_waste >= 1) => LABEL=0 (74.0/12.0)
+(text_best <= 0) and (text_very <= 0) and (text_could >= 1) and (text_have >= 1) and (text_be >= 1) and (text_life <= 0) => LABEL=0 (79.0/25.0)
+(text_great <= 0) and (text_best <= 0) and (text_plot >= 1) and (text_story <= 0) and (text_still <= 0) and (text_characters <= 0) => LABEL=0 (105.0/33.0)
+(text_very <= 0) and (text_minutes >= 1) and (text_at <= 0) => LABEL=0 (44.0/12.0)
+(text_t >= 1) and (text_even >= 1) and (text_though <= 0) and (text_worse >= 1) => LABEL=0 (25.0/3.0)
+(text_t >= 1) and (text_stupid >= 1) => LABEL=0 (42.0/12.0)
+ => LABEL=1 (2735.0/725.0)
+
+Number of Rules : 18
+
+
+Time taken to build model: 119.93 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3512               70.24   %
+Incorrectly Classified Instances      1488               29.76   %
+Kappa statistic                          0.4047
+Mean absolute error                      0.391 
+Root mean squared error                  0.4557
+Relative absolute error                 78.1929 %
+Root relative squared error             91.1454 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.668    0.263    0.716      0.668    0.691      0.406    0.726     0.718     0
+                 0.737    0.332    0.690      0.737    0.713      0.406    0.726     0.671     1
+Weighted Avg.    0.702    0.298    0.703      0.702    0.702      0.406    0.726     0.694     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1667  828 |    a = 0
+  660 1845 |    b = 1
+
