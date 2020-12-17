@@ -1,0 +1,26 @@
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    5000
+Attributes:   1010
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 28.9 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6385
+Mean absolute error                      0.4133
+Root mean squared error                  0.4263
+Relative absolute error                 82.6424 %
+Root relative squared error             85.2446 %
+Total Number of Instances             5000     
