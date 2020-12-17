@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R2-17-weka.filters.unsupervised.attribute.Remove-R2-10-weka.filters.unsupervised.attribute.Remove-R2-5-weka.filters.unsupervised.attribute.Remove-R5-9,12-13,17-18,21-22,24-25,28-30,32,34-43,45-50,52-54,61,63,65-67-weka.filters.unsupervised.attribute.Remove-R873-876,882-887,891-898,900,902-905,907-910,913,916-921,938,940-weka.filters.unsupervised.attribute.Remove-R510-513
+Instances:    5000
+Attributes:   900
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(bad = 1) and (great = 0) => LABEL=0 (913.0/174.0)
+(worst = 1) => LABEL=0 (259.0/34.0)
+(great = 0) and (t = 1) and (just = 1) and (very = 0) and (like = 1) and (films = 0) and (been = 0) and (best = 0) and (But = 0) and (loved = 0) => LABEL=0 (67.0/5.0)
+(great = 0) and (t = 1) and (no = 1) and (an = 0) and (after = 0) and (my = 0) and (They = 0) => LABEL=0 (74.0/14.0)
+(any = 1) and (make = 1) and (films = 0) and (But = 0) => LABEL=0 (99.0/22.0)
+(great = 0) and (plot = 1) and (their = 0) and (seen = 0) and (well = 0) => LABEL=0 (179.0/47.0)
+(or = 1) and (love = 0) and (would = 1) and (plot = 1) => LABEL=0 (65.0/14.0)
+(t = 1) and (best = 0) and (my = 0) and (will = 0) and (like = 1) and (they = 1) and (his = 0) and (or = 1) and (part = 0) => LABEL=0 (33.0/3.0)
+(great = 0) and (poor = 1) => LABEL=0 (91.0/22.0)
+(very = 0) and (great = 0) and (could = 1) and (that = 0) => LABEL=0 (46.0/11.0)
+(very = 0) and (they = 1) and (there = 1) and (like = 1) and (doesn = 1) => LABEL=0 (29.0/7.0)
+(t = 1) and (best = 0) and (couldn = 1) => LABEL=0 (93.0/37.0)
+(love = 0) and (very = 0) and (waste = 1) => LABEL=0 (46.0/4.0)
+(great = 0) and (even = 1) and (original = 1) and (time = 0) => LABEL=0 (32.0/8.0)
+(thing = 1) and (just = 1) and (love = 0) and (here = 0) => LABEL=0 (92.0/29.0)
+(boring = 1) and (very = 0) => LABEL=0 (67.0/17.0)
+(well = 0) and (t = 1) and (love = 0) and (his = 0) and (director = 1) and (seen = 0) => LABEL=0 (29.0/4.0)
+ => LABEL=1 (2786.0/733.0)
+
+Number of Rules : 18
+
+
+Time taken to build model: 35.24 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3494               69.88   %
+Incorrectly Classified Instances      1506               30.12   %
+Kappa statistic                          0.3975
+Mean absolute error                      0.3969
+Root mean squared error                  0.4573
+Relative absolute error                 79.3794 %
+Root relative squared error             91.4568 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.665    0.268    0.712      0.665    0.688      0.398    0.724     0.710     0
+                 0.732    0.335    0.687      0.732    0.709      0.398    0.724     0.675     1
+Weighted Avg.    0.699    0.301    0.700      0.699    0.698      0.398    0.724     0.693     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1660  835 |    a = 0
+  671 1834 |    b = 1
