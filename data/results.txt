@@ -10,34 +10,34 @@ Test mode:10-fold cross-validation
 === Classifier model (full training set) ===
 
 Random forest of 100 trees, each constructed while considering 10 random features.
-Out of bag error: 0.0186
+Out of bag error: 0.2008
 
 
 
-Time taken to build model: 9.33 seconds
+Time taken to build model: 19.27 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances        4907               98.14   %
-Incorrectly Classified Instances        93                1.86   %
-Kappa statistic                          0     
-Mean absolute error                      0.0343
-Root mean squared error                  0.1342
-Relative absolute error                 93.5497 %
-Root relative squared error             99.2986 %
+Correctly Classified Instances        4103               82.06   %
+Incorrectly Classified Instances       897               17.94   %
+Kappa statistic                          0.6412
+Mean absolute error                      0.3785
+Root mean squared error                  0.401 
+Relative absolute error                 75.7031 %
+Root relative squared error             80.191  %
 Total Number of Instances             5000     
 
 === Detailed Accuracy By Class ===
 
                TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
-                 1         1          0.981     1         0.991      0.704    0
-                 0         0          0         0         0          0.704    1
-Weighted Avg.    0.981     0.981      0.963     0.981     0.972      0.704
+                 0.815     0.174      0.823     0.815     0.819      0.897    0
+                 0.826     0.185      0.818     0.826     0.822      0.897    1
+Weighted Avg.    0.821     0.179      0.821     0.821     0.821      0.897
 
 === Confusion Matrix ===
 
     a    b   <-- classified as
- 4907    0 |    a = 0
-   93    0 |    b = 1
+ 2034  461 |    a = 0
+  436 2069 |    b = 1
 
